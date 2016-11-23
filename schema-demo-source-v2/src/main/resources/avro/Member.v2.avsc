@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "Member",
+  "namespace": "com.example",
+  "fields": [
+    {"name": "name", "type": "string", "default": ""},
+    {"name": "years", "type": "int", "aliases": ["age"], "default": -1},
+    {"name": "gender", "type": "string", "default":"unknown"},
+    {"name": "emails", "type": {"type": "array", "items": "string"}, "default": []}
+  ]
+}
